@@ -15,7 +15,7 @@ class Waiting(StatesGroup):
 
 @dp.message_handler(commands=['start'])  # Обработчик команды /start
 async def send_welcome(message: Message):
-    await message.reply("Привет! Я бот WordWise! \nМои функции для обощение текста и определение его настроения\nДля получения списка команд введите /help")
+    await message.reply("Привет! Я бот WordWise! \nМои функции - это обощение текста и определение его настроения\nДля получения списка команд введите /help")
 
 @dp.message_handler(commands=['help'])   # Обработчик команды /help
 async def send_welcome(message: Message):
